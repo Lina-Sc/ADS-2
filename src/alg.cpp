@@ -7,7 +7,7 @@ double pown(double value, uint16_t n) {
   double s = value;
   for (uint16_t i = 2; i <= n; ++i) {
       s *= value;
-  }
+    }
 }
 
 uint64_t fact(uint16_t n) {
@@ -15,7 +15,7 @@ uint64_t fact(uint16_t n) {
   for (uint16_t j = 1; j <= n; ++j) {
     b *=j;
     return b;
-  }
+    }
 }
 
 double calcItem(double x, uint16_t n) {
