@@ -5,8 +5,9 @@
 
 double pown(double value, uint16_t n) {
   double s = value;
-  for (uint16_t i = 2; i <= n; ++i)
+  for (uint16_t i = 2; i <= n; ++i) {
       value *= s;
+  }
 }
 
 uint64_t fact(uint16_t n) {
@@ -38,6 +39,6 @@ double sinn(double x, uint16_t count) {
 double cosn(double x, uint16_t count) {
   double f = 1;
   for (uint16_t m = 2; m <= count; ++m)
-    f += pown(-1, i - 1) * calcItem(x, 2*i - 2);
+    f += pown(-1, m - 1) * calcItem(x, 2*m - 2);
   return f;
 }
