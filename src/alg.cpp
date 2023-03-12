@@ -31,7 +31,7 @@ double expn(double x, uint16_t count) {
 double sinn(double x, uint16_t count) {
   double d = x;
   for (uint16_t l = 2; l <= count; ++l)
-    d += pown(-1; l-1) * calcItem(x, 2*l-1);
+    d += pown(-1, l-1) * calcItem(x, 2*l-1);
   return d;
 }
 
