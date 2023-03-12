@@ -6,13 +6,13 @@
 double pown(double value, uint16_t n) {
   double s = value;
   for (uint16_t i = 2; i <= n; ++i) {
-      value *= s;
+      s *= value;
   }
 }
 
 uint64_t fact(uint16_t n) {
   uint16_t b = 1;
-  for (uint16_t j = n; j >= 1; --j) {
+  for (uint16_t j = 1; j <= n; ++j) {
     b *=j;
     return b;
   }
